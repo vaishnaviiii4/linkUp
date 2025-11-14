@@ -31,7 +31,7 @@ export const signinReducer = (
     case LOGIN_FAILURE:
       return {
         ...state,
-        isAuthenticated: true,
+        isAuthenticated: false,
         loading: false,
       };
     case LOGOUT_SUCCESS:
@@ -81,7 +81,7 @@ export const MessageReducer = (state = { messages: [] }, action) => {
   switch (action.type) {
     case ADD_MESSAGE: {
       return {
-        messsages: [...state.messages, action.payload.message],
+        messages: [...state.messages, action.payload.message],
       };
     }
     default:
