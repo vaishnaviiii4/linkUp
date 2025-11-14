@@ -1,0 +1,24 @@
+.chat_message {
+  padding: 2px 5px;
+  display: flex;
+  align-items: center;
+}
+.chat_message_content {
+  margin: 0px 5px;
+  padding: 5px 8px;
+  display: flex;
+  flex: 1;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: rgb(245, 238, 229);
+  font-size: small;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.chat_message_upper_row {
+  display: flex;
+  padding: 0px 0px 5px;
+}
+.chat_message_sender_name,
+.chat_message_time {
+  padding: 0px 8px 0px 0px;
+}

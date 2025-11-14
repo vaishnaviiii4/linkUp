@@ -1,0 +1,170 @@
+.meetPage {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+  min-height: 100vh;
+  width: 100vw;
+}
+.meet_bottom {
+  position: fixed;
+  bottom: 0px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+.bottom_options_left {
+  display: flex;
+  align-items: center;
+}
+.bottom_options_left h3 {
+  color: white;
+  letter-spacing: 2.3px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.bottom_options {
+  padding: 0px 10px;
+}
+.bottom_options_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  min-width: 40px;
+  color: white;
+
+  background-color: rgb(56, 53, 53);
+  margin: 2px 7px;
+  padding: 2px 7px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+/* */
+.bg_color_red {
+  background-color: red;
+}
+
+/* Chat Window */
+.chat_window {
+  background-color: white;
+  display: none;
+  width: 360px;
+  height: 490px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.close_chat_window {
+  display: flex;
+  justify-content: space-between;
+}
+.close_chat_window svg {
+  cursor: pointer;
+}
+.close_chat_window h3,
+svg {
+  color: rgb(84, 84, 84);
+}
+.chat_window_info_para {
+  margin: 20px 5px;
+  padding: 17px 15px;
+  border-radius: 5px;
+  background-color: rgb(241, 243, 244);
+}
+.chat_window_info_para p {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(46, 46, 47);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.chat_messages_block {
+  height: 250px;
+  overflow-y: auto;
+}
+.chat_send_message {
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  border: 1px solid rgb(95, 93, 93);
+  padding: 5px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat_send_message input {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.chat_send_message svg {
+  color: rgb(134, 125, 125);
+  cursor: pointer;
+}
+
+/* meeting details */
+.meeting_details_link {
+  margin: 20px 10px;
+  padding: 5px;
+}
+.meeting_details_link,
+h3,
+p {
+  padding: 5px;
+}
+.meeting_link p {
+  margin: 20px 10px;
+  color: rgb(76, 76, 77);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.copy_meeting_details span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: blue;
+  cursor: pointer;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+.copy_meeting_details:hover {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(231, 231, 241);
+}
+.copy_meeting_details svg {
+  cursor: pointer;
+  max-height: 15px;
+}
+/* media queries*/
+@media screen and (max-width: 1000px) {
+  .bottom_options_icon {
+    min-height: 30px;
+    min-width: 30px;
+  }
+  .meet_bottom {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 850px) {
+  .bottom_options_right,
+  .bottom_options_left {
+    display: none;
+  }
+  .bottom_options_icon {
+    min-height: 40px;
+    min-width: 40px;
+  }
+}
+.meet_videos_section{
+  padding: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
